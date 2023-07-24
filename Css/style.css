@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.login-page {
+  position: relative;
+  height: 97vh;
+}
+.login-page .top-right {
+  display: inline-block;
+  position: absolute;
+  width: 158px;
+  height: 98px;
+  right: -8px;
+  top: -8px;
+  background-color: #003440;
+  border-radius: 0px 0px 0px 92px;
+  -webkit-border-radius: 0px 0px 0px 92px;
+  -moz-border-radius: 0px 0px 0px 92px;
+  -ms-border-radius: 0px 0px 0px 92px;
+  -o-border-radius: 0px 0px 0px 92px;
+}
+.login-page .bottom-left {
+  display: inline-block;
+  position: absolute;
+  width: 158px;
+  height: 98px;
+  left: -8px;
+  bottom: -12px;
+  background-color: #003440;
+  border-radius: 0px 92px 0px 0px;
+  -webkit-border-radius: 0px 92px 0px 0px;
+  -moz-border-radius: 0px 92px 0px 0px;
+  -ms-border-radius: 0px 92px 0px 0px;
+  -o-border-radius: 0px 92px 0px 0px;
+}
+.login-page .content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.login-page .content .image img {
+  max-width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .login-page .content .image img {
+    display: none;
+  }
+}
+.login-page .content .form {
+  position: absolute;
+  top: 45%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .login-page .content .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+.login-page .content .form h1 {
+  margin-bottom: 70px;
+  text-align: center;
+  font-size: 35px;
+}
+.login-page .content .form form {
+  display: flex;
+  flex-direction: column;
+}
+.login-page .content .form form label {
+  margin-bottom: 5px;
+}
+.login-page .content .form form label {
+  margin-bottom: 5px;
+}
+.login-page .content .form form input {
+  margin-bottom: 25px;
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #003440;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.login-page .content .form form button {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  background-color: #003440;
+  border: 0 solid transparent;
+  color: white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.login-page .content .form .lines {
+  display: grid;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.login-page .content .form .lines::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  top: 53%;
+  right: 0;
+  background-color: black;
+}
+.login-page .content .form .lines::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 1px;
+  top: 53%;
+  left: 0;
+  background-color: black;
+}
+.login-page .content .form .social img {
+  margin-left: 30px;
+  cursor: pointer;
+}
